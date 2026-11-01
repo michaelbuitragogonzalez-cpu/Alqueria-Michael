@@ -260,3 +260,5 @@ $("whatsapp").onclick = async () => {
     : "Se abrió el chat con el pedido. La imagen de la factura se descargó: adjúntala y envíala.";
   $("avisoWa").hidden = false;
 };
+pintarCatalogo();
+pintarCarrito();

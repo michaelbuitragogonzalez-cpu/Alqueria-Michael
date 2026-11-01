@@ -1,5 +1,5 @@
 // Número de WhatsApp que recibe los pedidos (código de país + número, sin + ni espacios).
-const WHATSAPP_NUMERO = "573000000000";
+const WHATSAPP_NUMERO = "3113884222";
 
 const $ = (id) => document.getElementById(id);
 const moneda = new Intl.NumberFormat("es-CO", { style: "currency", currency: "COP", maximumFractionDigits: 0 });
@@ -253,7 +253,7 @@ $("whatsapp").onclick = async () => {
   const f = await facturaActual;
   descargar(f);
   const copiado = await copia;
-  const url = `https://wa.me/${WHATSAPP_NUMERO}?text=${encodeURIComponent(mensajeWhatsApp())}`;
+  const url = `https://wa.me/${3113884222}?text=${encodeURIComponent(mensajeWhatsApp())}`;
   if (ventana) ventana.location.href = url; else window.open(url, "_blank");
   $("avisoWa").textContent = copiado
     ? "Se abrió el chat con el pedido. La imagen de la factura quedó copiada: pégala con Ctrl+V y envíala."

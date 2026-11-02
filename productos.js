@@ -2,7 +2,7 @@
 // "imagen" apunta a la carpeta img/. Reemplaza los .svg por tus fotos (.jpg/.png) y actualiza la ruta.
 const PRODUCTOS = [
   { id: 1,  nombre: "Bocadillo Beleño",           presentacion: "Paquete X 36",        descripcion: "Delicioso bocadillo ideal para disfrutar en cualquier momento del día.", precio: 15500,  imagen: "img/bocadillo.jpeg" },
-  { id: 2,  nombre: "Boliqueso",     presentacion: "Paquete X 24",        descripcion: "Crujientes y deliciosos boliquesos, perfectos para disfrutar como pasabocas en cualquier momento.",                      precio: 8000,  imagen: "img/boliqueso.jpeg" },
+  { id: 2,  nombre: "Boliqueso",     presentacion: "Paquete X 24",        descripcion: "Crujientes y deliciosos boliquesos, perfectos para disfrutar como pasabocas en cualquier momento.",                      precio: 8000,  imagen: "img/Boliqueso.jpeg" },
   { id: 3,  nombre: "Chocoleche",   presentacion: "Paquete X 6",        descripcion: "Deliciosa bebida achocolatada, ideal para disfrutar fría y darle dulzura a tu día.",                         precio: 10000,  imagen: "img/chocoleche.jpeg" },
   { id: 4,  nombre: "Avena Sabor Original",      presentacion: "Paquete X 6", descripcion: "Avena cremosa y deliciosa, perfecta para disfrutar bien fría en cualquier momento del día.",             precio: 9000, imagen: "img/avenabolsaautentica.jpeg" },
   { id: 5,  nombre: "Avena Sabor Cubana",         presentacion: "Paquete X 6",         descripcion: "Avena cremosa y deliciosa, perfecta para disfrutar bien fría en cualquier momento del día.",                         precio: 9000,  imagen: "img/avenabolsacubana.jpeg" },

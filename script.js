@@ -15,7 +15,36 @@ addEventListener("pageshow", (e) => { if (e.persisted) location.reload(); });
 const buscar = (id) => PRODUCTOS.find((p) => p.id === Number(id));
 const lineas = () => Object.entries(carrito).map(([id, cant]) => ({ p: buscar(id), cant })).filter((l) => l.p);
 const total = () => lineas().reduce((s, l) => s + l.p.precio * l.cant, 0);
+// Tutorial "¿Cómo pedir?": se reproduce solo al entrar
+let temporizadorTutorial;
 
+function abrirTutorial() {
+  const dlg = $("tutorial"), pasos = [...dlg.querySelectorAll(".pasos li")];
+  dlg.showModal();
+  let i = 0;
+  const marcar = () => {
+    pasos.forEach((p, n) => p.classList.toggle("activo", n === i));
+    i = (i + 1) % pasos.length;
+  };
+  clearInterval(temporizadorTutorial);
+  setTimeout(() => {
+    if (!dlg.open) return;
+    marcar();
+    temporizadorTutorial = setInterval(marcar, 1800);
+  }, 1200);
+}
+
+$("tutorial").addEventListener("close", () => {
+  clearInterval(temporizadorTutorial);
+  document.querySelectorAll("#tutorial .pasos li").forEach((p) => p.classList.remove("activo"));
+});
+
+$("abrirTutorial").onclick = abrirTutorial;
+$("cerrarTutorial").onclick = () => $("tutorial").close();
+$("tutorial").addEventListener("click", (e) => { if (e.target === e.currentTarget) e.currentTarget.close(); });
+
+// Se abre solo, un momento después de entrar
+setTimeout(abrirTutorial, 600);
 function pintarCatalogo() {
   $("catalogo").innerHTML = PRODUCTOS.map((p, i) => `
     <article class="tarjeta" style="--d:${(i % 4) * 90}ms">

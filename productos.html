@@ -11,6 +11,7 @@
 <body>
   <header class="encabezado">
     <a href="index.html"><img src="img/logo.svg" alt="Alquería, volver al inicio"></a>
+    <button class="btn btn-borde btn-ayuda" id="abrirTutorial">¿Cómo pedir?</button>
     <button class="btn-carrito" id="abrirCarrito" aria-label="Abrir carrito">
       Carrito <span id="contador">0</span>
     </button>
@@ -55,7 +56,24 @@
       </div>
     </div>
   </dialog>
-
+  <dialog id="tutorial">
+  <div class="enc"><h2>¿Cómo hacer tu pedido?</h2></div>
+  <div class="cont">
+    <ol class="pasos">
+      <li style="--d:100ms"><span class="num">1</span>
+        <div><h3>Elige tus productos</h3><p>Recorre el catálogo y mira el precio de cada uno.</p></div></li>
+      <li style="--d:220ms"><span class="num">2</span>
+        <div><h3>Agrégalos al carrito</h3><p>Toca "Agregar al carrito". Puedes repetirlo con todos los productos que quieras.</p></div></li>
+      <li style="--d:340ms"><span class="num">3</span>
+        <div><h3>Revisa tu carrito</h3><p>Toca el botón "Carrito" para cambiar las cantidades con + y −, o eliminar un producto. El total se actualiza solo.</p></div></li>
+      <li style="--d:460ms"><span class="num">4</span>
+        <div><h3>Finaliza el pedido</h3><p>Toca "FINALIZAR PEDIDO" y revisa el resumen con los precios y el total.</p></div></li>
+      <li style="--d:580ms"><span class="num">5</span>
+        <div><h3>Envíalo por WhatsApp</h3><p>Toca "Enviar pedido por WhatsApp". Se abre el chat con tu pedido; adjunta o pega la imagen de la factura y envía el mensaje.</p></div></li>
+    </ol>
+    <button class="btn btn-primario" id="cerrarTutorial">¡Entendido, a pedir!</button>
+  </div>
+</dialog>
   <script src="productos.js"></script>
   <script src="script.js"></script>
 </body>

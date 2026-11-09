@@ -196,3 +196,17 @@ body{overflow-x:clip}
   .acciones{grid-template-columns:1fr}
   .acciones #cerrarResumen{grid-column:auto}
 }
+/* ===== Tutorial ===== */
+#tutorial{max-height:92vh;overflow:auto}
+.pasos{list-style:none;display:grid;gap:.9rem}
+.pasos li{display:grid;grid-template-columns:44px 1fr;gap:.9rem;align-items:start;animation:entrar .5s var(--d,0ms) var(--suave) backwards}
+.pasos .num{width:44px;height:44px;display:grid;place-items:center;background:var(--rojo);color:#fff;font-weight:900;font-size:1.25rem}
+.pasos h3{font-size:1.05rem;color:var(--rojo-osc)}
+.pasos p{color:var(--gris);font-size:.92rem}
+#tutorial .btn{width:100%}
+.btn-ayuda{min-height:46px;padding:.4rem .9rem;font-size:.9rem}
+@media (max-width:760px){.btn-ayuda{padding:.4rem .6rem;font-size:.85rem}}
+/* Paso resaltado mientras se reproduce el tutorial */
+.pasos li{padding:.6rem;transition:transform .4s var(--suave),background .4s}
+.pasos li.activo{background:var(--rojo-claro);transform:translateX(6px)}
+.pasos li.activo .num{animation:rebote .5s var(--suave)}

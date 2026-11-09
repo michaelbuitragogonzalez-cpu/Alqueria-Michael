@@ -50,7 +50,7 @@ const PRODUCTOS = [
 
   { id: 31, nombre: "Crema X 170", presentacion: "Unidad X 170 G", descripcion: "Cremosa y deliciosa, perfecta para tus recetas favoritas.", precio: 4100, imagen: "img/crema170.jpeg" },
 
-  { id: 32, nombre: "Crema X 400", presentacion: "Unidad X 400 G", descripcion: "Cremosa y deliciosa, ideal para compartir y preparar tus recetas.", precio: 9000, imagen: "img/crema400.jpeg" },
+  { id: 32, nombre: "Crema X 400", presentacion: "Unidad X 400 G", descripcion: "Cremosa y deliciosa, ideal para compartir y preparar tus recetas.", precio: 9600, imagen: "img/crema400.jpeg" },
 
   { id: 33, nombre: "Crema X 850 G", presentacion: "Unidad X 850 G", descripcion: "Crema de gran tamaño, ideal para tus preparaciones y recetas.", precio: 17700, imagen: "img/crema850.jpeg" },
 
@@ -64,11 +64,11 @@ const PRODUCTOS = [
 
   { id: 38, nombre: "Yogurt Bolsa", presentacion: "Paquete X 6", descripcion: "Yogurt delicioso y refrescante, ideal para disfrutar en cualquier momento.", precio: 8500, imagen: "img/yogurt.jpeg" },
 
-  { id: 39, nombre: "Paca de Leche Deslactosada", presentacion: "Paca X 6", descripcion: "Leche deslactosada ideal para disfrutar todos los días.", precio: 34100, imagen: "img/pacadeslactosada.jpeg" },
+  { id: 39, nombre: "Paca de Leche Deslactosada", presentacion: "Paca X 6", descripcion: "Leche deslactosada ideal para disfrutar todos los días.", precio: 33500, imagen: "img/pacadeslactosada.jpeg" },
 
   { id: 40, nombre: "Leche Mediana", presentacion: "Unidad X 400 G", descripcion: "Leche de excelente calidad, perfecta para el consumo diario.", precio: 2200, imagen: "img/mediana.jpeg" },
 
-  { id: 41, nombre: "Paca de Leche Megalitro", presentacion: "Paca X 6", descripcion: "Leche fresca y deliciosa en presentación de paca.", precio: 34200, imagen: "img/pacamegalitro.jpeg " },
+  { id: 41, nombre: "Paca de Leche Megalitro", presentacion: "Paca X 6", descripcion: "Leche fresca y deliciosa en presentación de paca.", precio: 33500, imagen: "img/pacamegalitro.jpeg " },
 
   { id: 42, nombre: "Pan de 3000", presentacion: "Paquete X 13", descripcion: "Pan fresco y delicioso, perfecto para acompañar tus desayunos.", precio: 3000, imagen: "img/pan3000.jpeg" },
 

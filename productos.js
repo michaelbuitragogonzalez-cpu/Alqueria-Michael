@@ -92,7 +92,8 @@ const PRODUCTOS = [
   { id: 59, nombre: "Gelatina Con Juguetes", presentacion: "Paquete X 20", descripcion: "Deliciosa gelatina con juguetes incorporados.", precio: 12000, imagen: "img/gelatinaconjuguete.jpeg" },
   { id: 60, nombre: "Aros de Trigo Pollo", presentacion: "Paquete X 30", descripcion: "Crujientes aros de trigo con sabor a pollo.", precio: 9000, imagen: "img/arospollo.jpeg" },
   { id: 61, nombre: "Aros de Trigo Limón", presentacion: "Paquete X 30", descripcion: "Crujientes aros de trigo con sabor a limón.", precio: 9000, imagen: "img/aroslimon.jpeg" },
-
+  { id: 62, nombre: "Bonyurt Galaxy", presentacion: "Unidad X 170 G", descripcion: "Bonyurt de alta calidad con sabor a galaxia.", precio: 3200, imagen: "img/bonyurtgalaxia.jpeg" },
+  { id: 63, nombre: "Suero X 100 G", presentacion: "Unidad X 100 G", descripcion: "Suero de leche natural, ideal para recetas.", precio: 2300, imagen: "img/suero100.jpeg" },
 ];
 // Ordenar los productos alfabéticamente por nombre (A-Z)
 PRODUCTOS.sort((a, b) =>

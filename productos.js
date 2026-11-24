@@ -87,6 +87,11 @@ const PRODUCTOS = [
   { id: 54, nombre: "Galleta Roja", presentacion: "Paquete X 13", descripcion: "Deliciosa galleta tradicional, perfecta para acompañar tu bebida favorita.", precio: 3000, imagen: "img/galletaroja.jpeg" },
   { id: 55, nombre: "Gelatina Blanca", presentacion: "Paquete X 28", descripcion: "Delicioso dulce relleno, ideal para remedios.", precio: 8500, imagen: "img/gelatinablanca.jpeg" },
   { id: 56, nombre: "Leche Deslactosada Mediana", presentacion: "Unidad X 400 ml", descripcion: "Leche fresca y nutritiva para disfrutar en cualquier momento sin lactosa.", precio: 2100, imagen: "img/deslactosadamediana.jpeg" },
+  { id: 57, nombre: "Arequipe Alqueria", presentacion: "Unidad X 150 g", descripcion: "Delicioso, con la cremosidad ideal.", precio: 3500, imagen: "img/arequipe.jpeg" },
+  { id: 58, nombre: "Rosquillas De Limón", presentacion: "Paquete X 12", descripcion: "Deliciosas rosquillas con sabor a limón.", precio: 9000, imagen: "img/rosquillasdelimon.jpeg" },
+  { id: 59, nombre: "Gelatina Con Juguetes", presentacion: "Paquete X 20", descripcion: "Deliciosa gelatina con juguetes incorporados.", precio: 12000, imagen: "img/gelatinaconjuguete.jpeg" },
+  { id: 60, nombre: "Aros de Trigo Pollo", presentacion: "Paquete X 30", descripcion: "Crujientes aros de trigo con sabor a pollo.", precio: 9000, imagen: "img/arospollo.jpeg" },
+  { id: 61, nombre: "Aros de Trigo Limón", presentacion: "Paquete X 30", descripcion: "Crujientes aros de trigo con sabor a limón.", precio: 9000, imagen: "img/aroslimon.jpeg" },
 
 ];
 // Ordenar los productos alfabéticamente por nombre (A-Z)
